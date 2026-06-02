@@ -59,11 +59,16 @@ of a break, not confirm it. Drive it inline for a small change, or fan out with 
 `Workflow`. Feed results into the same finding schema and report
 (`references/running-a-session.md`, `references/report-format.md`).
 
-## Load references on demand
+## Reference index
 
-Read only what the current phase needs — `jtbd-workflow.md` (and
-`generating-jtbd.md` if generating personas) at startup, `running-a-session.md`
-while driving, `report-format.md` at synthesis. Don't preload everything.
+Load only what the current phase needs — don't preload everything.
+
+| File | What's in it | Read it |
+|------|--------------|---------|
+| `references/jtbd-workflow.md` | Establish personas + their jobs; persona schema; persona→tasks | At startup |
+| `references/generating-jtbd.md` | Working-backwards method to generate JTBD from the product | At startup, if no JTBD is provided |
+| `references/running-a-session.md` | Browser setup, per-task loop, finding schema, non-UI evidence, safety | While driving a session |
+| `references/report-format.md` | PM synthesis + prioritized report structure | At synthesis |
 
 ## Safety
 

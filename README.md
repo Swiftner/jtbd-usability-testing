@@ -39,7 +39,7 @@ persona it most affects instead of forcing a browser session.
 ## Install
 
 ```bash
-git clone https://github.com/<you>/jtbd-usability-testing
+git clone https://github.com/Swiftner/jtbd-usability-testing
 ln -s "$PWD/jtbd-usability-testing" ~/.claude/skills/jtbd-usability-testing
 ```
 
