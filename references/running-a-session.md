@@ -41,6 +41,15 @@ change being validated** — test what was built, not a generic tour:
    are gated, skip it; screenshots alone are sufficient.
 4. Record a structured finding (schema below) in the persona's voice.
 
+## Per task — no-UI change (no browser)
+
+No app to drive, so per task: state the persona's downstream job, then walk the
+change through it — read the contract / diff, **trace the consumer** (grep for
+the renamed/removed field), and judge whether the job still works. Record the
+same finding; `evidence` is the diff / payload / consumer-code ref and
+`completed` reflects whether the downstream job survives. (Why and when:
+SKILL.md "When there's no UI to drive".)
+
 ## Finding schema (one per task)
 
 ```

@@ -38,15 +38,22 @@ persona it most affects instead of forcing a browser session.
 
 ## Install
 
+Clone straight into your Claude Code skills directory:
+
 ```bash
-git clone https://github.com/Swiftner/jtbd-usability-testing
-ln -s "$PWD/jtbd-usability-testing" ~/.claude/skills/jtbd-usability-testing
+mkdir -p ~/.claude/skills
+git clone https://github.com/Swiftner/jtbd-usability-testing ~/.claude/skills/jtbd-usability-testing
 ```
+
+Update later with `git -C ~/.claude/skills/jtbd-usability-testing pull`.
 
 ## Use
 
-Give Claude a running, logged-in URL and a focus:
+Point Claude at a running app you're already logged into (local or hosted) and give it a focus:
 
-> "usability-test https://app.example.com/onboarding as our users — focus on first-run."
+> "usability-test http://localhost:3000/onboarding as our users — focus on first-run."
 
-The skill never logs in and never takes irreversible actions.
+You log in yourself in your own browser first; the skill drives that
+already-authenticated session and never handles credentials or takes
+irreversible actions. No UI to test? It also handles API/backend changes — see
+the skill's "When there's no UI to drive."

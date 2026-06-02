@@ -9,10 +9,10 @@ deliverable of every run (UI or not).
 
 1. Pool every persona's findings.
 2. **Triage false positives.** The personas are LLMs, so a share of findings
-   will be non-issues (research puts this around a quarter). Drop or down-rank
-   anything tagged `needs-human-check` or that you can't tie to evidence; present
-   confirmed issues as findings and clearly flag the rest as *to verify*, never
-   as fact.
+   will be non-issues (research puts this at ~24–31% — see
+   [`docs/evidence.md`](../docs/evidence.md)). Drop or down-rank anything tagged
+   `needs-human-check` or that you can't tie to evidence; present confirmed
+   issues as findings and clearly flag the rest as *to verify*, never as fact.
 3. **Dedupe:** merge findings that are the same underlying issue across personas
    (note which personas hit it — cross-persona issues rank higher).
 4. **Prioritize** by **severity × JTBD impact**: a `critical` that blocks a core
@@ -21,8 +21,10 @@ deliverable of every run (UI or not).
 
 ## Report structure
 
-Write a dated markdown report (e.g. `reports/YYYY-MM-DD-<focus>.md`). Screenshots
-live in `evidence/` at the repo root, so links from the report use `../evidence/`:
+Write a dated markdown report in the **product's** repo (the one you tested) —
+e.g. `reports/YYYY-MM-DD-<focus>.md` — with screenshots in `evidence/` next to it
+(links use `../evidence/`). To hand it off, commit `reports/` + `evidence/`, or
+paste the report with the screenshots attached — relative links break otherwise.
 
 ```
 # Usability run — <focus> — <date>
@@ -41,6 +43,7 @@ Each persona: tasks attempted, completed/partial/no, notable quotes.
 ## Evidence index
 Links to `../evidence/<persona>-<taskN>.png` screenshots (and any session GIF)
 referenced in findings, organized by persona + task.
+(No-UI run: list contract diffs / payloads / consumer-code refs instead.)
 ```
 
 Keep recommendations actionable and specific (a fix a designer/engineer could

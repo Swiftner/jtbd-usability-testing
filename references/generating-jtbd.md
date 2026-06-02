@@ -10,6 +10,11 @@ Treat the result as a strong, fast hypothesis — not ground truth (see Caveats)
 
 Read what the product says about itself, in rough order of signal:
 
+- **The product's own repo (if you're in it)** — codebase, README, onboarding /
+  empty-state source, changelog. For a Claude Code user testing a pre-ship
+  feature this is usually the richest source, and may be the only one (no public
+  site yet). Start here before reaching for the web; only ask the user when the
+  repo and web are both thin.
 - **Hero / landing page** — the promise and the target ("for marketing agencies")
 - **Pricing + "who it's for"** — segments, by plan; who pays and why
 - **Onboarding / empty states** — the first job the product pushes you toward

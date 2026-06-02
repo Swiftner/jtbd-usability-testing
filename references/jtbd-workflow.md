@@ -16,10 +16,13 @@ Garbage personas → useless test; spend real effort here.
    (roles)? What are they trying to accomplish (the job)? What do they use today
    instead?
 
-If you generated the personas yourself, **confirm them with the user before
-testing** — a wrong persona invalidates the whole run. If the user can't
-confirm, proceed with personas tagged **hypothesis** and weight their findings
-lower in the report.
+If you generated the personas yourself, **confirm before testing**: show each
+persona (the schema + the artifact/signal it came from) **and the 3–6 tasks
+you'll run as it** (see "From persona to tasks" below), then wait for an explicit
+yes/no. A wrong persona *or* task list invalidates the run, and showing the
+source is what lets the user actually judge — not rubber-stamp. If the user
+can't confirm, proceed with personas tagged **hypothesis** and weight their
+findings lower in the report.
 
 ## Persona schema (keep each compact)
 

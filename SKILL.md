@@ -29,13 +29,15 @@ establishing that — never jump straight to driving the app.
 
 1. **Run the JTBD workflow** — establish the product's personas and their jobs
    per `references/jtbd-workflow.md`. No JTBD provided? Generate one by working
-   backwards from the product (`references/generating-jtbd.md`). This is the
-   gate: no personas, no test.
+   backwards from the product (`references/generating-jtbd.md`). No personas, no
+   test — but don't stall: if the user can't provide or confirm them, generate
+   and proceed with `hypothesis`-tagged personas (weighted lower in the report).
 2. **Confirm the target** — get a running, **already-authenticated** URL (you
    never log in), plus the **focus** and **what changed** (the work being
    validated). For changes with no UI, see below — no URL needed.
-3. **Select personas** — pick which derived persona(s) this run targets
-   (default: all).
+3. **Select & confirm** — pick which persona(s) this run targets (default: all);
+   if you generated them, confirm the personas **and their task lists** with the
+   user before testing (`references/jtbd-workflow.md`).
 
 ## Run procedure
 
@@ -75,6 +77,8 @@ Load only what the current phase needs — don't preload everything.
 | `references/generating-jtbd.md` | Working-backwards method to generate JTBD from the product | At startup, if no JTBD is provided |
 | `references/running-a-session.md` | Browser setup, per-task loop, finding schema, non-UI evidence, safety | While driving a session |
 | `references/report-format.md` | AI PM synthesis: triage feedback → the report the human works from | Final step (always) |
+
+Why this works — rationale, cited evidence, and known limits: [`docs/evidence.md`](docs/evidence.md).
 
 ## Safety
 
