@@ -49,9 +49,13 @@ change being validated** — test what was built, not a generic tour:
 - steps:       the path taken (brief)
 - friction[]:  each point of confusion / dead-end / surprise
 - severity:    critical | serious | moderate   (`no` on a core job → critical; `partial` / worked around → serious; cosmetic/annoyance → moderate)
+- confidence:  confirmed | needs-human-check   (the persona is an LLM and can flag non-issues — mark anything you're not sure is real)
 - quote:       one in-character line ("I have no idea where my data is")
 - evidence:    screenshot/GIF refs
 ```
+
+Record findings as raw input — don't self-edit them down. The AI PM step
+(`report-format.md`) is what evaluates and triages them into the human's report.
 
 For a **non-UI change** (no browser — see SKILL.md "When there's no UI to
 drive"), `evidence` is the contract diff / request-response payloads /

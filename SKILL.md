@@ -9,7 +9,9 @@ description: Persona-driven usability testing for any product. Starts by establi
 *works* — not that a real person with a real job can get that job done. This
 skill closes that gap: establish who the users are and what jobs they hire the
 product for, then *be* those users against the running product and report where
-the job breaks down — before shipping.
+the job breaks down — before shipping. Treat the output as a fast first-pass —
+a hypothesis generator with a human in the loop, not a replacement for testing
+with real users.
 
 Three principles it runs on:
 
@@ -40,11 +42,15 @@ establishing that — never jump straight to driving the app.
 1. **Preflight (once)** — open a tab and load the URL per
    `references/running-a-session.md`; stop at any login wall.
 2. **Per-persona sessions** — for each selected persona, in turn: derive 3–6
-   tasks from its jobs + the focus + **what actually changed**, then drive the
-   app and record findings per `references/running-a-session.md`. One persona at
-   a time (sequential — no parallel browser sessions).
-3. **Synthesize** — when all personas are done, produce the report per
-   `references/report-format.md`.
+   tasks from its jobs + the focus + **what actually changed** (favor end-to-end
+   flows, not single screens), then drive the app and record findings per
+   `references/running-a-session.md`. One persona at a time (sequential — no
+   parallel browser sessions).
+3. **AI PM synthesis (always the last step)** — switch into an AI product
+   manager: evaluate all the persona feedback, triage out likely false
+   positives, and produce the prioritized, actionable **report the human works
+   from**, per `references/report-format.md`. Every run ends here — including the
+   no-UI path below.
 
 ## When there's no UI to drive
 
@@ -68,7 +74,7 @@ Load only what the current phase needs — don't preload everything.
 | `references/jtbd-workflow.md` | Establish personas + their jobs; persona schema; persona→tasks | At startup |
 | `references/generating-jtbd.md` | Working-backwards method to generate JTBD from the product | At startup, if no JTBD is provided |
 | `references/running-a-session.md` | Browser setup, per-task loop, finding schema, non-UI evidence, safety | While driving a session |
-| `references/report-format.md` | PM synthesis + prioritized report structure | At synthesis |
+| `references/report-format.md` | AI PM synthesis: triage feedback → the report the human works from | Final step (always) |
 
 ## Safety
 

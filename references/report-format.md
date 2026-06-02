@@ -1,14 +1,21 @@
-# Report format (PM synthesis)
+# Report format — AI product manager synthesis
 
-After all personas have run, switch hats to a **product manager** and turn the
-raw findings into a prioritized, evidence-backed report.
+**The run always ends here.** After all personas have run, switch into an **AI
+product manager**: evaluate the raw persona feedback, decide what's real, and
+produce the prioritized, evidence-backed **report the human works from** — the
+deliverable of every run (UI or not).
 
 ## Synthesize
 
 1. Pool every persona's findings.
-2. **Dedupe:** merge findings that are the same underlying issue across personas
+2. **Triage false positives.** The personas are LLMs, so a share of findings
+   will be non-issues (research puts this around a quarter). Drop or down-rank
+   anything tagged `needs-human-check` or that you can't tie to evidence; present
+   confirmed issues as findings and clearly flag the rest as *to verify*, never
+   as fact.
+3. **Dedupe:** merge findings that are the same underlying issue across personas
    (note which personas hit it — cross-persona issues rank higher).
-3. **Prioritize** by **severity × JTBD impact**: a `critical` that blocks a core
+4. **Prioritize** by **severity × JTBD impact**: a `critical` that blocks a core
    job outranks a `moderate` annoyance. Weight hypothesis (unvalidated) personas
    lower than validated ones.
 

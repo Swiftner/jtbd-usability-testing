@@ -53,5 +53,8 @@ ones nothing supports. Always **confirm with the user before testing**.
   positioning bias and blind spots.
 - LLM-generated JTBD misses segments the artifacts don't mention (e.g. the power
   user the marketing page ignores).
+- **Watch for demographic stereotyping.** LLM personas amplify gender, age, and
+  dialect bias — sanity-check that the set isn't caricatured or skewed against
+  the people it claims to represent.
 - It's a head start that makes the *first* test possible, not a substitute for
   talking to real users. Confirm-before-test is the guard.

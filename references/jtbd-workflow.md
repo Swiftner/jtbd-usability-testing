@@ -35,5 +35,7 @@ lower in the report.
 Pick the persona(s) the run targets. Derive **3–6 concrete tasks** from persona
 jobs + the run focus + **what actually changed**. Tasks are goals the persona
 would really attempt ("find the one thing to fix before my next call"), not UI
-steps. Stay in character: take the path this persona would take, with their
-priorities and impatience.
+steps. Favor **end-to-end flows** (multi-step journeys) over single-screen
+checks — cross-screen friction is high-value and the hardest thing for an agent
+to catch, so cover it deliberately. Stay in character: take the path this
+persona would take, with their priorities and impatience.
